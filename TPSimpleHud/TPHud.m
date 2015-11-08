@@ -83,7 +83,8 @@
         NSArray *vertical = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[progressHud]|" options:kNilOptions metrics:nil views:views];
         [view addConstraints:vertical];
     [UIView animateWithDuration:.5 animations:^{
-        self.hudView.alpha = self.initialAlpha;
+        CGFloat initialAlpha;
+        self.hudView.alpha = initialAlpha;
     }];
 }
 
